@@ -117,4 +117,9 @@ public class GuitarTest {
         guitar.setStringNumber(5);
         assertEquals(5, guitar.getStringNumber());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Twang", guitar.play());
+    }
 }

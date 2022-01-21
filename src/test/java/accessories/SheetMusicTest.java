@@ -24,4 +24,9 @@ public class SheetMusicTest {
         sheetMusic.setComposer("Chopin");
         assertEquals("Chopin", sheetMusic.getComposer());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(10.00, sheetMusic.calculateMarkup(), 0.0);
+    }
 }

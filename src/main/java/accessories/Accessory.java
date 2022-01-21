@@ -28,4 +28,9 @@ public abstract class Accessory extends SellableItem {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    @Override
+    public double calculateMarkup() {
+        return getPriceSold() - getPriceBought();
+    }
 }

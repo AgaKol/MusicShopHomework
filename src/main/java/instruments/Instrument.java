@@ -49,4 +49,9 @@ public abstract class Instrument extends SellableItem implements IPlay {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    @Override
+    public double calculateMarkup() {
+        return getPriceSold() - getPriceBought();
+    }
 }

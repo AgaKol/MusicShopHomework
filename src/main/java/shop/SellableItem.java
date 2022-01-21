@@ -1,6 +1,8 @@
 package shop;
 
-public abstract class SellableItem {
+import behaviours.ISell;
+
+public abstract class SellableItem implements ISell {
 
     private double priceBought;
     private double priceSold;
